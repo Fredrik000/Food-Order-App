@@ -1,0 +1,24 @@
+.shoppingcart {
+  display: flex;
+  justify-content: space-around;
+  background-color: #652121;
+  width: 220px;
+  padding: 15px 25px;
+  border-radius: 30px;
+
+  .shoppingcart-item-counter-wrapper {
+    background-color: brown;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  svg {
+    width: 30px;
+    height: auto;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

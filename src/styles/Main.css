@@ -1,0 +1,126 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 120px;
+  color: white;
+  background-color: brown;
+}
+
+.shoppingcart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #652121;
+  width: 220px;
+  padding: 15px 25px;
+  border-radius: 30px;
+}
+
+.shoppingcart .shoppingcart-item-counter-wrapper {
+  background-color: brown;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.shoppingcart svg {
+  width: 30px;
+  height: auto;
+}
+
+.shoppingcart p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card {
+  min-height: 300px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.meals {
+  background-color: white;
+  margin: 50px 200px;
+}
+
+.meals-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  margin: 0 30px;
+  border-bottom: 1px solid #3333334d;
+}
+
+.meals-item .meals-item-info * {
+  margin: 2px;
+}
+
+.meals-item .meals-item-info h3 {
+  color: brown;
+  font-size: 24px;
+}
+
+.meals-item .meals-item-info p {
+  font-size: 18px;
+}
+
+.meals-item .meals-item-form * {
+  margin: 2px 5px;
+}
+
+.meals-item .meals-item-form label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.meals-item .meals-item-form input {
+  width: 50px;
+  height: 30px;
+  font-size: 18px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.meals-item .meals-item-form button {
+  color: white;
+  background-color: brown;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+html body {
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  border: 0;
+}
+
+li {
+  list-style-type: none;
+}
+/*# sourceMappingURL=Main.css.map */
