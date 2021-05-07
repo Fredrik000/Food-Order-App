@@ -1,12 +1,22 @@
+import React, { useState } from 'react';
 import Header from './Components/Header';
-import Card from './Components/UI/Card';
 import Meals from './Components/Meals';
+import CartModal from './Components/CartModal';
 
 function App() {
+  const [cartIsVisible, setCartIsVisible] = useState(false);
+  const [cartContent, setCartContent] = useState([]);
+
   return (
     <>
-      <Header />
-      <Meals />
+      <Header setCarIsVisible={setCartIsVisible} cartContent={cartContent} />
+      <Meals setCartContent={setCartContent} />
+      {cartIsVisible && (
+        <CartModal
+          setCartIsVisible={setCartIsVisible}
+          setCartContent={setCartContent}
+        />
+      )}
     </>
   );
 }
