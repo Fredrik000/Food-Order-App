@@ -1,0 +1,19 @@
+.card {
+  border-radius: 20px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.input {
+  label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  input {
+    width: 50px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid grey;
+    border-radius: 10px;
+  }
+}
