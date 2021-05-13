@@ -1,10 +1,11 @@
+@import 'config';
 @import 'header';
 @import 'header-cart';
 @import 'ui';
 @import 'meals';
 @import 'meals-summary';
-@import 'cart-modal';
-@import 'cart-items';
+@import 'cart';
+@import 'cart-item';
 
 * {
   box-sizing: border-box;

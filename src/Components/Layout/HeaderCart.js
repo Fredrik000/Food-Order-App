@@ -1,18 +1,37 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import CartIcon from '../Cart/CartIcon';
 import CartContext from '../../store/cart-context';
 
 function HeaderCart(props) {
-  // Gives access to content inside CartContext
-  const cartCtx = useContext(CartContext);
+  const [headerIsHighlighted, setHeaderIsHighlighted] = useState(false);
+  const cartCtx = useContext(CartContext); // Gives access to content inside CartContext
+  const { items } = cartCtx;
 
   // Takes the items array and reduces it to a single number
-  const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
+  const numberOfCartItems = items.reduce((curNumber, item) => {
     return curNumber + item.amount;
   }, 0);
 
+  const headerClasses = `header-cart ${headerIsHighlighted ? 'bump' : ''} `;
+
+  useEffect(() => {
+    if (items.length === 0) {
+      return;
+    }
+    setHeaderIsHighlighted(true);
+
+    const timer = setTimeout(() => {
+      setHeaderIsHighlighted(false);
+    }, 300);
+
+    // cleanup fucntion
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [items]);
+
   return (
-    <div className='header-cart' onClick={props.onShowCart}>
+    <div className={headerClasses} onClick={props.onShowCart}>
       <CartIcon />
       <p>Your Cart</p>
       <div className='header-item-counter-wrapper'>

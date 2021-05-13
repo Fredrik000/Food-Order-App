@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from '../UI/Card';
 import MealItem from './MealItem/MealItem';
 
 const DUMMY_MEALS = [
-  {
-    id: '0',
-    name: 'Special Meal',
-    description: 'Helens Favorite pls',
-    price: 9.99,
-  },
   {
     id: '1',
     name: 'Peperoni',
@@ -39,6 +33,7 @@ function AvailableMeals(props) {
   const mealsList = DUMMY_MEALS.map((meal) => (
     <MealItem
       key={meal.id}
+      id={meal.id}
       name={meal.name}
       description={meal.description}
       price={meal.price}

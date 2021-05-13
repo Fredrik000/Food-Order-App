@@ -39,6 +39,11 @@
       background-color: brown;
       border-radius: 10px;
       padding: 8px 0;
+      @include easeOut;
+
+      &:hover {
+        @include btnHover;
+      }
     }
   }
 }

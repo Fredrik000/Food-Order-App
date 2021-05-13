@@ -6,7 +6,7 @@
 
   .cart-item-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 110px 80px;
 
     h2 {
       grid-column: 1;
@@ -38,6 +38,12 @@
     background-color: white;
     border: 1px solid brown;
     border-radius: 10px;
+    @include easeOut;
+
+    &:hover {
+      @include btnHover;
+      color: white;
+    }
 
     &:last-child {
       margin-left: 5px;
