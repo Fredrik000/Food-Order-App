@@ -162,8 +162,23 @@
 
 .meals {
   background-color: white;
-  width: 75%;
+  width: 1300px;
+  max-width: 80%;
   margin: 50px auto;
+}
+
+.meals-loading {
+  text-align: center;
+  color: white;
+  margin: 2rem;
+  font-size: 48px;
+}
+
+.meals-error {
+  text-align: center;
+  color: red;
+  margin: 2rem;
+  font-size: 32px;
 }
 
 .meals-item {
@@ -174,7 +189,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px;
-  margin: 0 30px;
+  margin-right: 30px;
   border-bottom: 1px solid #3333334d;
 }
 
@@ -217,7 +232,8 @@
   position: relative;
   color: white;
   padding: 20px;
-  width: 50%;
+  width: 800px;
+  max-width: 50%;
   margin: -100px auto auto;
   text-align: center;
   font-size: larger;
@@ -249,10 +265,10 @@
           flex-direction: column;
   background-color: white;
   top: 25vh;
-  left: 25%;
-  width: 50%;
+  left: 30%;
+  width: 40%;
   min-height: 200px;
-  max-height: 580px;
+  max-height: 70vh;
   z-index: 100;
 }
 
@@ -290,12 +306,13 @@
 }
 
 .cart-modal .btns-wrapper .close-btn {
-  width: 60px;
+  width: 70px;
   color: brown;
   background-color: white;
   border: 1px solid brown;
   border-radius: 15px;
-  padding: 7px 0;
+  padding: 8px 0;
+  margin-right: 5px;
 }
 
 .cart-modal .btns-wrapper .close-btn:hover {
@@ -304,12 +321,12 @@
 }
 
 .cart-modal .btns-wrapper .order-btn {
-  width: 60px;
+  width: 70px;
   color: white;
   background-color: brown;
   border-radius: 15px;
-  padding: 7px 0;
-  margin-left: 10px;
+  padding: 8px 0;
+  margin-left: 5px;
 }
 
 .cart-modal .btns-wrapper .order-btn:hover {
@@ -380,6 +397,84 @@
 
 .cart-item button:last-child {
   margin-left: 5px;
+}
+
+.checkout {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0;
+  height: 19rem;
+  overflow: auto;
+}
+
+.checkout .control {
+  margin-bottom: 0.5rem;
+}
+
+.checkout .control label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.checkout .control input {
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.checkout .btns-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.checkout .btns-wrapper .cancel-btn {
+  width: 70px;
+  color: brown;
+  background-color: white;
+  border: 1px solid brown;
+  border-radius: 15px;
+  padding: 8px 0;
+  margin-right: 5px;
+}
+
+.checkout .btns-wrapper .cancel-btn:hover {
+  background-color: #3f1010;
+  color: white;
+}
+
+.checkout .btns-wrapper .confirm-btn {
+  width: 70px;
+  color: white;
+  background-color: brown;
+  border-radius: 15px;
+  padding: 8px 0;
+  margin-left: 5px;
+}
+
+.checkout .btns-wrapper .confirm-btn:hover {
+  background-color: #3f1010;
+}
+
+.checkout .invalid label {
+  color: #ca3e51;
+}
+
+.checkout .invalid input {
+  border-color: #aa0b20;
+  background-color: #ffeff1;
 }
 
 * {
