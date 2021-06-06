@@ -2,7 +2,6 @@
   display: grid;
   justify-content: center;
   margin: 1rem 0;
-  height: 19rem;
   overflow: auto;
 
   .control {
@@ -56,12 +55,14 @@
     }
   }
 
-  .invalid label {
-    color: #ca3e51;
-  }
+  .invalid {
+    label {
+      color: #ca3e51;
+    }
 
-  .invalid input {
-    border-color: #aa0b20;
-    background-color: #ffeff1;
+    input {
+      border-color: #aa0b20;
+      background-color: #ffeff1;
+    }
   }
 }
