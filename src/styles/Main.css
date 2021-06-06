@@ -312,7 +312,6 @@
   border: 1px solid brown;
   border-radius: 15px;
   padding: 8px 0;
-  margin-right: 5px;
 }
 
 .cart-modal .btns-wrapper .close-btn:hover {
@@ -326,11 +325,16 @@
   background-color: brown;
   border-radius: 15px;
   padding: 8px 0;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .cart-modal .btns-wrapper .order-btn:hover {
   background-color: #3f1010;
+}
+
+.cart-modal .modal-feedback {
+  margin: 2rem;
+  font-size: 48px;
 }
 
 .cart-item {
